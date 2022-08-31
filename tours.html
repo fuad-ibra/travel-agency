@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Our Tours</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/css/lightgallery.min.css?_v=20220801202307">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/css/lg-thumbnail.min.css?_v=20220801202307">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220801202307">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper-tours">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<a class="header__logo" href="home.html">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+					</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="home.html">
+									home
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="tours.html">
+									tours
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									blog
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="icon-menu" type="button">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="tour-banner">
+				<div class="tour-banner__container">
+					<h1 class="tour-banner__title main-title text-gradient">
+						tours
+					</h1>
+				</div>
+			</section>
+
+			<section class="tour">
+				<div class="tour__container">
+					<div class="tour__content">
+						<h2 class="tour__title title text-gradient">
+							find your tour
+						</h2>
+						<form class="tour__form" action="#">
+							<div class="tour__row">
+								<div class="tour__col item-tour">
+									<div class="item-tour__field item-tour__field--location">
+										destination
+									</div>
+									<div class="item-tour__dropdown item-tour__dropdown--location location">
+										<ul class="location__list">
+											<li class="location__item">
+												florence
+											</li>
+											<li class="location__item">
+												lisbon
+											</li>
+											<li class="location__item">
+												munich
+											</li>
+											<li class="location__item">
+												istanbul
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tour__col item-tour">
+									<input class="item-tour__field item-tour__field--datepicker" type="text" placeholder="departure date" />
+								</div>
+								<div class="tour__col item-tour">
+									<div class="item-tour__field item-tour__field--quantity">
+										persons
+									</div>
+									<div class="item-tour__dropdown item-tour__dropdown--quantity quantity">
+										<div class="quantity__button quantity__button_minus"></div>
+										<div class="quantity__input">
+											<input class="input" type="number" value="0" readonly>
+										</div>
+										<div class="quantity__button quantity__button_plus"></div>
+									</div>
+								</div>
+							</div>
+							<button class="item-tour__button button" type="submit">
+								show
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="tour-content">
+				<div class="tour-content__container">
+					<div class="filter">
+						<form class="filter__form" action="#" onsubmit="return false">
+							<span class="filter__title text-gradient">
+								filters
+							</span>
+							<div class="filter__content _spoiler-init" data-spoilers>
+								<div class="filter__item item-filter">
+									<span class="item-filter__title spoilers__title" data-spoiler>
+										price
+									</span>
+									<div class="item-filter__body">
+										<div class="price-filter">
+											<div class="price-filter__values">
+												<input class="price-filter__input" id="price-filter__start" type="number" autocomplete="off" value="1600">
+												<input class="price-filter__input" id="price-filter__end" type="number" autocomplete="off" value="4000">
+											</div>
+											<div class="price-filter__slider"></div>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item item-filter">
+									<span class="item-filter__title spoilers__title" data-spoiler>
+										quantity
+									</span>
+									<div class="item-filter__body">
+										<div class="quantity-filter">
+											<span class="quantity-filter__values text">
+												1 per.
+											</span>
+											<span class="quantity-filter__values text">
+												2 per.
+											</span>
+											<span class="quantity-filter__values text">
+												3 per.
+											</span>
+											<span class="quantity-filter__values text">
+												4 per.
+											</span>
+											<span class="quantity-filter__values text active">
+												5 per.
+											</span>
+											<span class="quantity-filter__values text">
+												6 per.
+											</span>
+											<span class="quantity-filter__values text">
+												7 per.
+											</span>
+											<span class="quantity-filter__values text">
+												8 per.
+											</span>
+											<span class="quantity-filter__values text">
+												9 per.
+											</span>
+											<span class="quantity-filter__values text">
+												10 per.
+											</span>
+											<span class="quantity-filter__values text">
+												10+ per.
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item item-filter">
+									<span class="item-filter__title spoilers__title" data-spoiler>
+										destination
+									</span>
+									<div class="item-filter__body">
+										<div class="checkbox-filter">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" value="1" name="form[]" data-error="Ошибка" checked>
+												<span class="checkbox__text">
+													florence
+												</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" value="1" name="form[]" data-error="Ошибка">
+												<span class="checkbox__text">
+													lisbon
+												</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" value="1" name="form[]" data-error="Ошибка">
+												<span class="checkbox__text">
+													munich
+												</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" value="1" name="form[]" data-error="Ошибка">
+												<span class="checkbox__text">
+													istanbul
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item item-filter">
+									<span class="item-filter__title spoilers__title" data-spoiler>
+										duration
+									</span>
+									<div class="item-filter__body"></div>
+								</div>
+								<div class="filter__item item-filter">
+									<span class="item-filter__title spoilers__title" data-spoiler>
+										date
+									</span>
+									<div class="item-filter__body"></div>
+								</div>
+							</div>
+							<button class="filter__button button" type="submit">
+								show
+							</button>
+							<a class="filter__remove text" href="#">
+								<svg width="13" height="13" viewBox="0 0 13 13">
+									<path d="M1.94975 11.8493L11.8492 1.94979M11.8492 11.8493L1.94975 1.94979" stroke="" stroke-width="2" stroke-linecap="round" />
+								</svg>
+								remove filters
+							</a>
+						</form>
+					</div>
+					<section class="catalog">
+						<h2 class="catalog__title title text-gradient">
+							Our tours
+						</h2>
+						<div class="catalog__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="catalog__slide slide-catalog swiper-slide">
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/florence.webp" type="image/webp"><img src="img/tours/florence.jpg" alt="Florence"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												florence, italy
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur cum vitae, hic ratione dolor, ut quos dolore minus veniam, aperiam provident minima iusto vero necessitatibus veritatis perferendis animi natus quo deserunt? Ullam, excepturi facere modi quae maxime alias eius eos dignissimos, corrupti molestiae id ipsam laudantium possimus sit, veniam cumque?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/lisbon.webp" type="image/webp"><img src="img/tours/lisbon.jpg" alt="Lisbon"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												lisbon, portugal
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error consectetur aut repellendus ex facilis, ullam minima debitis tempora accusantium voluptate, nesciunt nostrum quasi dolorum delectus eum optio nulla cumque voluptatum? Et aut dolores necessitatibus iure ab facere id hic quia sequi suscipit laborum tenetur molestiae perspiciatis vitae, fuga aspernatur.
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite active">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/munich.webp" type="image/webp"><img src="img/tours/munich.jpg" alt="Munich"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												munich, germany
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est ipsa accusamus quibusdam, ipsum eligendi sint fugiat aspernatur animi doloremque excepturi dolore iure modi veritatis enim earum architecto laborum accusantium at atque amet. Molestias voluptatibus voluptatum cumque. Recusandae quisquam ab ipsum quia vero neque deserunt, consectetur, nesciunt quam iure culpa?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/istanbul.webp" type="image/webp"><img src="img/tours/istanbul.jpg" alt="Istanbul"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												istanbul, turkey
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil odit vel quisquam. Minima fuga laudantium vero repellat tempora fugiat, dolor cupiditate fugit sunt facilis. Sapiente perferendis odit eaque. Suscipit aliquam, earum saepe dolorem quisquam laborum! Expedita, consequatur molestiae. Tenetur minima eum libero eaque vitae adipisci non autem! Assumenda, veritatis?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__slide slide-catalog swiper-slide">
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/florence.webp" type="image/webp"><img src="img/tours/florence.jpg" alt="Florence"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												florence, italy
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur cum vitae, hic ratione dolor, ut quos
+												dolore minus veniam, aperiam provident minima iusto vero necessitatibus veritatis perferendis animi natus
+												quo deserunt? Ullam, excepturi facere modi quae maxime alias eius eos dignissimos, corrupti molestiae id
+												ipsam laudantium possimus sit, veniam cumque?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/lisbon.webp" type="image/webp"><img src="img/tours/lisbon.jpg" alt="Lisbon"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												lisbon, portugal
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error consectetur aut repellendus ex facilis,
+												ullam minima debitis tempora accusantium voluptate, nesciunt nostrum quasi dolorum delectus eum optio nulla
+												cumque voluptatum? Et aut dolores necessitatibus iure ab facere id hic quia sequi suscipit laborum tenetur
+												molestiae perspiciatis vitae, fuga aspernatur.
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite active">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/munich.webp" type="image/webp"><img src="img/tours/munich.jpg" alt="Munich"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												munich, germany
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est ipsa accusamus quibusdam, ipsum eligendi
+												sint fugiat aspernatur animi doloremque excepturi dolore iure modi veritatis enim earum architecto laborum
+												accusantium at atque amet. Molestias voluptatibus voluptatum cumque. Recusandae quisquam ab ipsum quia vero
+												neque deserunt, consectetur, nesciunt quam iure culpa?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/istanbul.webp" type="image/webp"><img src="img/tours/istanbul.jpg" alt="Istanbul"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												istanbul, turkey
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil odit vel quisquam. Minima fuga
+												laudantium vero repellat tempora fugiat, dolor cupiditate fugit sunt facilis. Sapiente perferendis odit
+												eaque. Suscipit aliquam, earum saepe dolorem quisquam laborum! Expedita, consequatur molestiae. Tenetur
+												minima eum libero eaque vitae adipisci non autem! Assumenda, veritatis?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog__slide slide-catalog swiper-slide">
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/florence.webp" type="image/webp"><img src="img/tours/florence.jpg" alt="Florence"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												florence, italy
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur cum vitae, hic ratione dolor, ut quos
+												dolore minus veniam, aperiam provident minima iusto vero necessitatibus veritatis perferendis animi natus
+												quo deserunt? Ullam, excepturi facere modi quae maxime alias eius eos dignissimos, corrupti molestiae id
+												ipsam laudantium possimus sit, veniam cumque?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/lisbon.webp" type="image/webp"><img src="img/tours/lisbon.jpg" alt="Lisbon"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												lisbon, portugal
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error consectetur aut repellendus ex facilis,
+												ullam minima debitis tempora accusantium voluptate, nesciunt nostrum quasi dolorum delectus eum optio nulla
+												cumque voluptatum? Et aut dolores necessitatibus iure ab facere id hic quia sequi suscipit laborum tenetur
+												molestiae perspiciatis vitae, fuga aspernatur.
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite active">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/munich.webp" type="image/webp"><img src="img/tours/munich.jpg" alt="Munich"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												munich, germany
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est ipsa accusamus quibusdam, ipsum eligendi
+												sint fugiat aspernatur animi doloremque excepturi dolore iure modi veritatis enim earum architecto laborum
+												accusantium at atque amet. Molestias voluptatibus voluptatum cumque. Recusandae quisquam ab ipsum quia vero
+												neque deserunt, consectetur, nesciunt quam iure culpa?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-catalog__item">
+										<div class="slide-catalog__image">
+											<picture><source srcset="img/tours/istanbul.webp" type="image/webp"><img src="img/tours/istanbul.jpg" alt="Istanbul"></picture>
+										</div>
+										<div class="slide-catalog__content">
+											<span class="slide-catalog__subtitle text">
+												Bus tour
+											</span>
+											<span class="slide-catalog__title">
+												istanbul, turkey
+											</span>
+											<p class="slide-catalog__text text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil odit vel quisquam. Minima fuga
+												laudantium vero repellat tempora fugiat, dolor cupiditate fugit sunt facilis. Sapiente perferendis odit
+												eaque. Suscipit aliquam, earum saepe dolorem quisquam laborum! Expedita, consequatur molestiae. Tenetur
+												minima eum libero eaque vitae adipisci non autem! Assumenda, veritatis?
+											</p>
+											<div class="slide-catalog__actions">
+												<a class="button" href="#">
+													details
+												</a>
+												<div class="slide-catalog__favorite">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__buttons">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<div class="scrollup">
+				<svg width="20" height="20" viewBox="0 0 240.835 240.835">
+					<path d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z">
+					</path>
+				</svg>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__col">
+						<a class="footer__logo" href="home.html">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+						</a>
+						<p class="footer__text">
+							Eva Voyage - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed distinctio tenetur repellat ipsa delectus qui nam porro et rem placeat enim dicta fugit, amet animi cumque vero dolores voluptates.
+						</p>
+					</div>
+					<div class="footer__col">
+						<h3 class="footer__title">
+							menu
+						</h3>
+						<div class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="home.html">
+										home
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="tours.html">
+										tours
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">
+										blog
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<h3 class="footer__title">
+							contact us
+						</h3>
+						<div class="footer__contacts">
+							<a class="footer__contact" href="https://wa.me/9947706022010">
+								<svg width="19" height="19" viewBox="0 0 19 19">
+									<path d="M18.7774 9.37749C18.7737 10.9843 18.4248 12.4019 17.7198 13.7193C17.0555 14.9625 16.1389 15.9978 14.9848 16.8142C13.9717 17.5304 12.8621 18.0203 11.6487 18.2726C10.3053 18.5509 8.96195 18.5212 7.62972 18.2021C6.92464 18.0314 6.24925 17.7716 5.61468 17.4265C5.50706 17.3671 5.41429 17.3634 5.29925 17.4005C3.90023 17.8496 2.5012 18.2949 1.10218 18.7402C0.942607 18.7921 0.786748 18.8404 0.627178 18.8998C0.515849 18.9406 0.508428 18.8998 0.538115 18.807C0.701396 18.3283 0.860967 17.8496 1.02425 17.3671C1.37308 16.3244 1.7219 15.2816 2.07815 14.2425C2.1264 14.1052 2.05589 14.0162 2.00022 13.9197C1.56233 13.1589 1.25062 12.35 1.05765 11.4964C0.63831 9.65581 0.786748 7.8523 1.49183 6.10445C1.90003 5.09507 2.48265 4.1896 3.22855 3.38804C4.17855 2.36382 5.30296 1.6105 6.60179 1.10581C7.81526 0.634525 9.06956 0.452689 10.361 0.530619C12.1311 0.638236 13.7416 1.22456 15.1555 2.29331C16.985 3.67378 18.1354 5.48843 18.5955 7.74097C18.718 8.31617 18.7625 8.89878 18.7774 9.37749ZM9.74124 2.03355C9.39612 2.0187 8.99163 2.05953 8.58714 2.1189C8.42757 2.14117 8.27171 2.17456 8.11585 2.21538C5.70374 2.82769 3.97073 4.26753 2.95022 6.53492C2.36019 7.84488 2.20062 9.22906 2.42327 10.6466C2.59769 11.7673 3.01331 12.799 3.66272 13.7304C3.73323 13.8343 3.74437 13.9234 3.70355 14.0384C3.42894 14.8437 3.16175 15.6527 2.89085 16.4617C2.87601 16.5062 2.83148 16.5582 2.8723 16.599C2.91312 16.6435 2.96507 16.5953 3.0096 16.5804C3.8223 16.3207 4.63499 16.0646 5.44026 15.7937C5.62581 15.7306 5.75941 15.7603 5.91898 15.8568C7.74105 16.9515 9.68929 17.241 11.7414 16.6955C13.3 16.2835 14.584 15.4337 15.6008 14.1794C16.5842 12.966 17.1334 11.5781 17.2448 10.0269C17.3301 8.8357 17.1446 7.67788 16.6696 6.57203C16.0721 5.18042 15.1407 4.06714 13.8826 3.2396C12.6506 2.43062 11.2887 2.01499 9.74124 2.03355Z" />
+									<path d="M5.3103 7.33275C5.32515 6.49779 5.65171 5.81126 6.28999 5.27689C6.47183 5.12474 6.69077 5.06165 6.93198 5.10247C7.03589 5.11732 7.14351 5.13216 7.2437 5.12103C7.49604 5.10247 7.64077 5.24349 7.7187 5.4513C7.9562 6.07474 8.18628 6.70189 8.42007 7.32533C8.4646 7.44408 8.45347 7.55169 8.3978 7.66302C8.25308 7.96361 8.023 8.1974 7.79292 8.43119C7.59253 8.63529 7.5814 8.70208 7.7187 8.95072C8.38296 10.1531 9.29956 11.0882 10.5687 11.656C10.6318 11.682 10.6875 11.7265 10.7468 11.7525C10.9064 11.8304 11.0511 11.823 11.1847 11.6857C11.4445 11.4222 11.6857 11.1402 11.9195 10.8507C12.1013 10.6244 12.1867 10.591 12.4427 10.706C13.0662 10.9954 13.6599 11.3331 14.2648 11.6597C14.4652 11.7673 14.4875 11.9158 14.4578 12.1867C14.3353 13.2888 13.4929 13.7898 12.5318 13.9494C12.2089 14.0013 11.9046 13.9716 11.6003 13.8751C10.7097 13.5931 9.83394 13.2665 9.04722 12.7544C8.31245 12.2757 7.68159 11.6783 7.12866 10.9992C6.59058 10.3349 6.11187 9.63353 5.71479 8.87279C5.49214 8.43861 5.3103 7.76322 5.3103 7.33275Z" />
+								</svg>
+								<span>+994 77 06 02 2010</span>
+							</a>
+							<a class="footer__contact" href="mailto:info@evavoyage.com">
+								<svg width="19" height="19" viewBox="0 0 19 19">
+									<g clip-path="url(#clip0_19_387)">
+										<path d="M17.327 4.72464C17.292 4.67775 17.2482 4.6382 17.1979 4.60827C17.1476 4.57834 17.092 4.5586 17.0341 4.55019C16.9762 4.54178 16.9172 4.54486 16.8605 4.55926C16.8038 4.57366 16.7505 4.59909 16.7036 4.6341L9.52069 9.99566C9.49499 10.0149 9.46374 10.0253 9.43163 10.0253C9.39951 10.0253 9.36826 10.0149 9.34256 9.99566L2.30069 4.61035C2.2542 4.57487 2.20117 4.5489 2.14465 4.53391C2.08812 4.51893 2.02919 4.51522 1.97123 4.52301C1.91327 4.5308 1.85741 4.54992 1.80684 4.5793C1.75627 4.60868 1.71199 4.64772 1.67651 4.69421C1.64103 4.74071 1.61506 4.79373 1.60007 4.85026C1.58509 4.90679 1.58138 4.96571 1.58917 5.02367C1.59696 5.08163 1.61609 5.13749 1.64546 5.18806C1.67484 5.23863 1.71389 5.28292 1.76038 5.31839L7.29709 9.55332L1.82124 13.6799C1.77406 13.7151 1.73428 13.7592 1.70416 13.8098C1.67405 13.8603 1.65418 13.9163 1.6457 13.9745C1.63723 14.0328 1.6403 14.0921 1.65476 14.1492C1.66921 14.2062 1.69476 14.2599 1.72995 14.307C1.76513 14.3542 1.80926 14.394 1.85982 14.4241C1.91038 14.4542 1.96638 14.4741 2.02461 14.4826C2.08285 14.491 2.14219 14.488 2.19923 14.4735C2.25628 14.4591 2.30992 14.4335 2.3571 14.3983L8.03186 10.1144L8.80077 10.7082C8.98005 10.8454 9.19916 10.9205 9.42494 10.9221C9.65072 10.9237 9.87087 10.8517 10.0521 10.7171L10.8596 10.1144L16.6012 14.3983C16.648 14.4333 16.7014 14.4587 16.7581 14.4731C16.8148 14.4875 16.8737 14.4906 16.9316 14.4822C16.9895 14.4738 17.0452 14.454 17.0955 14.4241C17.1457 14.3942 17.1896 14.3547 17.2246 14.3078C17.2596 14.2609 17.285 14.2076 17.2994 14.1509C17.3138 14.0942 17.3168 14.0352 17.3084 13.9773C17.3 13.9194 17.2803 13.8637 17.2504 13.8135C17.2205 13.7632 17.1809 13.7193 17.134 13.6843L11.6033 9.55183L17.2365 5.34363C17.3299 5.27307 17.3918 5.16856 17.4087 5.05271C17.4257 4.93687 17.3963 4.81901 17.327 4.72464Z" fill="" />
+										<path d="M16.7734 2.82031H2.22656C1.63604 2.82031 1.06971 3.0549 0.652145 3.47246C0.234584 3.89002 0 4.45635 0 5.04688L0 13.9531C0 14.5436 0.234584 15.11 0.652145 15.5275C1.06971 15.9451 1.63604 16.1797 2.22656 16.1797H16.7734C17.364 16.1797 17.9303 15.9451 18.3479 15.5275C18.7654 15.11 19 14.5436 19 13.9531V5.04688C19 4.45635 18.7654 3.89002 18.3479 3.47246C17.9303 3.0549 17.364 2.82031 16.7734 2.82031ZM18.1094 13.9531C18.1094 14.3074 17.9686 14.6472 17.7181 14.8978C17.4676 15.1483 17.1278 15.2891 16.7734 15.2891H2.22656C1.87225 15.2891 1.53245 15.1483 1.28191 14.8978C1.03138 14.6472 0.890625 14.3074 0.890625 13.9531V5.04688C0.890625 4.69256 1.03138 4.35276 1.28191 4.10222C1.53245 3.85169 1.87225 3.71094 2.22656 3.71094H16.7734C17.1278 3.71094 17.4676 3.85169 17.7181 4.10222C17.9686 4.35276 18.1094 4.69256 18.1094 5.04688V13.9531Z" fill="" stroke="" stroke-width="0.5" />
+									</g>
+									<defs>
+										<clipPath id="clip0_19_387">
+											<rect width="19" height="19" fill="" />
+										</clipPath>
+									</defs>
+								</svg>
+								<span>info@evavoyage.com</span>
+							</a>
+						</div>
+						<div class="footer__socials socials">
+							<a class="socials__icon" id="footer-twitter" href="#">
+								<svg width="20" height="20" viewBox="0 0 512 512">
+									<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016  c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992  c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056  c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152  c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792  c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44  C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568  C480.224,136.96,497.728,118.496,512,97.248z"></path>
+								</svg>
+							</a>
+							<a class="socials__icon" id="footer-instagram" href="#">
+								<svg width="20" height="20" viewBox="0 0 409.61 409.61">
+									<path d="M307.205,0h-204.8C46.09,0,0.005,46.085,0.005,102.4v204.81c0,56.3,46.085,102.4,102.4,102.4h204.8 c56.315,0,102.4-46.1,102.4-102.4V102.4C409.605,46.085,363.52,0,307.205,0z M375.47,307.21c0,37.632-30.612,68.265-68.265,68.265 h-204.8c-37.637,0-68.265-30.633-68.265-68.265V102.4c0-37.642,30.628-68.265,68.265-68.265h204.8 c37.653,0,68.265,30.623,68.265,68.265V307.21z">
+									</path>
+									<circle cx="315.755" cy="93.865" r="25.6">
+									</circle>
+									<path d="M204.805,102.4c-56.566,0-102.4,45.839-102.4,102.4c0,56.54,45.834,102.41,102.4,102.41c56.55,0,102.4-45.87,102.4-102.41 C307.205,148.239,261.355,102.4,204.805,102.4z M204.805,273.075c-37.699,0-68.265-30.566-68.265-68.275 s30.566-68.265,68.265-68.265s68.265,30.556,68.265,68.265S242.504,273.075,204.805,273.075z">
+									</path>
+								</svg>
+							</a>
+							<a class="socials__icon" id="footer-facebook" href="#">
+								<svg width="20" height="20" viewBox="0 0 24 24">
+									<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-6.932 0-5.046 7.85-5.322 9h-3.487v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z">
+									</path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/lightgallery.min.js?_v=20220801202307"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/plugins/thumbnail/lg-thumbnail.min.js?_v=20220801202307"></script>
+	<script src="js/app.min.js?_v=20220801202307"></script>
+</body>
+
+</html>
