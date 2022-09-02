@@ -8705,37 +8705,6 @@
       }),
         $e.addEventListener("click", function () {
           window.scrollTo({ top: 0, behavior: "smooth" });
-        }),
-        [].forEach.call(document.querySelectorAll(".phone"), function (e) {
-          var t;
-          function s(e) {
-            e.keyCode && (t = e.keyCode),
-              this.selectionStart < 3 && e.preventDefault();
-            var s = "+994 (__) ___ __ __",
-              i = 0,
-              n = s.replace(/\D/g, ""),
-              r = this.value.replace(/\D/g, ""),
-              a = s.replace(/[_\d]/g, function (e) {
-                return i < r.length ? r.charAt(i++) || n.charAt(i) : e;
-              });
-            -1 != (i = a.indexOf("_")) &&
-              (i < 5 && (i = 3), (a = a.slice(0, i)));
-            var o = s
-              .substr(0, this.value.length)
-              .replace(/_+/g, function (e) {
-                return "\\d{1," + e.length + "}";
-              })
-              .replace(/[+()]/g, "\\$&");
-            (!(o = new RegExp("^" + o + "$")).test(this.value) ||
-              this.value.length < 5 ||
-              (t > 47 && t < 58)) &&
-              (this.value = a),
-              "blur" == e.type && this.value.length < 5 && (this.value = "");
-          }
-          e.addEventListener("input", s, !1),
-            e.addEventListener("focus", s, !1),
-            e.addEventListener("blur", s, !1),
-            e.addEventListener("keydown", s, !1);
         });
       var Le = s(545);
       const _e = s.n(Le)();
